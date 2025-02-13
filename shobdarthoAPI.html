@@ -30,7 +30,7 @@
 
         async function fetchInstagramPosts() {
             try {
-                const response = await fetch(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${accessToken}`);
+                const response = await fetch(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${EAAYwPAiPe5oBO6oZA56UzDTKZCbiPgbKZBhhfOto6x9OBQ4MH4zNtEc1cEkMFQFc55AtVXlUaHXYr7fHHxZALZBcZCHTIKDiZCefLATZAG3WIU3xUcNc3UGqIZCRjyyh0dU8rdb97SGt4VMlz6v0xyaHapFx6yeDGWPJVjwzb5zBGmwHsuf7k9ZB6je6pMu5BDZBgFQZCgZB6f0etbSdJAMzPUAZDZD }`);
                 const data = await response.json();
 
                 if (data.data) {
